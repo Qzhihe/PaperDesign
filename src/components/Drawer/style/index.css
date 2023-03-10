@@ -1,0 +1,28 @@
+$drawerPrefixCls: bs-drawer;
+$duration: .3s;
+
+.#{$drawerPrefixCls} {
+
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+
+  &__mask {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+  }
+
+  &__content {
+    position: absolute;
+    top: 0;
+    padding: 16px;
+    height: 100%;
+    transition: all $duration;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+  }
+}
