@@ -6,6 +6,8 @@ import AppWrapper from './styles';
 import DemoI from './components/Switch/demo/demo_简单使用';
 import DemoII from './components/Switch/demo/demo_失效状态';
 import DemoIII from './components/Switch/demo/demo_文字和图标';
+import DemoIV from './components/Switch/demo/demo_两种大小';
+import DemoV from './components/Switch/demo/demo_加载中';
 
 const App = () => {
     return(
@@ -13,6 +15,8 @@ const App = () => {
             <DemoI />
             <DemoII />
             <DemoIII />
+            <DemoIV />
+            <DemoV />
         </AppWrapper>
     );
 };

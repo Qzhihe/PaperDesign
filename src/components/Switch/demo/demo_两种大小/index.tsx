@@ -3,14 +3,14 @@ import DemoWrapper from "../styles";
 
 import { CheckOutlined, CloseOutlined } from '@ant-design/icons';
 
-const DemoIII: React.FC<{}> = () => {
+const DemoIV: React.FC<{}> = () => {
     return (
         <DemoWrapper>
-            <Switch checkedChildren="开启" unCheckedChildren="关闭"></Switch>
-            <Switch checkedChildren="1" unCheckedChildren="0"></Switch>
+            <Switch size='small' checkedChildren={<CheckOutlined />} unCheckedChildren={<CloseOutlined />}></Switch>
             <Switch checkedChildren={<CheckOutlined />} unCheckedChildren={<CloseOutlined />}></Switch>
+            <Switch size='large' checkedChildren={<CheckOutlined />} unCheckedChildren={<CloseOutlined />}></Switch>
         </DemoWrapper>
     )
 }
 
-export default DemoIII
+export default DemoIV
