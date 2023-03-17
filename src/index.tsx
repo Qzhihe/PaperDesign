@@ -9,6 +9,8 @@ import DemoIII from './components/Switch/demo/demo_文字和图标';
 import DemoIV from './components/Switch/demo/demo_两种大小';
 import DemoV from './components/Switch/demo/demo_加载中';
 
+import ButtonDemoI from './components/Button/demo/demo_按钮类型';
+
 const App = () => {
     return(
         <AppWrapper>
@@ -17,6 +19,7 @@ const App = () => {
             <DemoIII />
             <DemoIV />
             <DemoV />
+            <ButtonDemoI />
         </AppWrapper>
     );
 };

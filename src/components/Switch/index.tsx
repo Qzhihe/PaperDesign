@@ -103,6 +103,7 @@ const Switch = React.forwardRef<HTMLButtonElement, SwitchProps>(
                     {...restProps}
                     type='button'
                     className={switchClassName}
+                    role='switch'
                     ref={ref}
                     onClick={onInternalClick}
                 >

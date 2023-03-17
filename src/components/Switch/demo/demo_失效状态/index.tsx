@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 import Switch from '../..';
-import DemoWrapper from '../styles';
+import { DemoWrapper } from "../../../../styles";
 
 const StyledButton = styled.button`
     padding: 12px;

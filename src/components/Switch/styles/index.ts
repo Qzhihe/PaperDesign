@@ -79,8 +79,8 @@ const Wrapper = styled.div<{scale: number}>`
         }
 
         &--checked {
-            border: 1px solid #e0635f;
-            background-color: #e0635f;
+            border: 1px solid rgb(25, 165, 255);
+            background-color: rgb(25, 165, 255);
 
             .${switchPrefixCls}__handle {
                 inset-inline-start: calc(100% - ${props => props.scale * 20}px);
@@ -105,7 +105,7 @@ const Wrapper = styled.div<{scale: number}>`
         &--disabled {
             cursor: no-drop;
 
-            &:after{
+            &__handle {
                 background: #9e9e9e;
                 animation-name: none;
                 cursor: no-drop;

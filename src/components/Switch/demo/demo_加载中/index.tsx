@@ -1,5 +1,5 @@
 import Switch from '../..';
-import DemoWrapper from "../styles";
+import { DemoWrapper } from "../../../../styles";
 
 import { CheckOutlined, CloseOutlined } from '@ant-design/icons';
 
