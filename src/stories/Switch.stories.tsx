@@ -1,7 +1,6 @@
-import * as React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import Switch from '../components/Switch';
+import Switch, { SwitchProps } from '../components/Switch';
 
 export default {
   title: '组件/Switch 开关',
@@ -9,17 +8,31 @@ export default {
   component: Switch,
 } as ComponentMeta<typeof Switch>
 
-export const I = () => (
-  <>
-    <Switch></Switch>
-  </>
-)
-
-export const II = () => (
+export const I = (args: SwitchProps) => {
+  return (
     <>
-      <Switch onChange={() => console.log('state changed')}></Switch>
+      <Switch {...args}></Switch>
     </>
-)
+  )
+}
+
+I.argTypes = {
+  size: {
+    control: {
+      type: 'select',
+      options: ['small', 'medium', 'large'],
+    },
+  },
+  checkedChildren: {
+    control: {
+      type: 'text'
+    }
+  },
+  unCheckedChildren: {
+    control: {
+      type: 'text'
+    }
+  }
+};
 
 I.storyName = '默认开关样式';
-II.storyName = '绑定开关事件';

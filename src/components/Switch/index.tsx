@@ -18,7 +18,6 @@ export type SwitchClickEventHandler = SwitchChangeEventHandler;
  * @param unCheckedChildren 开关关闭时子组件
  * @param onChange          状态变更时调用
  * @param onClick           开关被点击时调用
- * @param tabIndex          ？
  * @param ckecked           开关当前状态
  * @param defaultChecked    默认开关状态
  * @param loadingIcon       开关加载时icon
@@ -26,7 +25,7 @@ export type SwitchClickEventHandler = SwitchChangeEventHandler;
  * @param title             开关标题
 */
 
-interface SwitchProps extends Omit<React.HTMLAttributes<HTMLButtonElement>, 'onChange' | 'onClick'> {
+export interface SwitchProps extends Omit<React.HTMLAttributes<HTMLButtonElement>, 'onChange' | 'onClick'> {
     className?: string;
     prefixCls?: string;
     disabled?: boolean;
@@ -35,12 +34,8 @@ interface SwitchProps extends Omit<React.HTMLAttributes<HTMLButtonElement>, 'onC
     unCheckedChildren?: React.ReactNode;
     onChange?: SwitchChangeEventHandler;
     onClick?: SwitchClickEventHandler;
-    tabIndex?: number;
     checked?: boolean;
-    defaultChecked?: boolean;
     loading?: boolean;
-    style?: React.CSSProperties;
-    title?: string;
 }
 
 const Switch = React.forwardRef<HTMLButtonElement, SwitchProps>(
